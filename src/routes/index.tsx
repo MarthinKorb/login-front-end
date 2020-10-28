@@ -15,6 +15,7 @@ const Routes: React.FC = () => {
             <Route path="/login" exact component={LoginForm} />
             <Route path="/cadastro" exact component={CreateForm} />
             <Route path="/esqueci-senha" exact component={ForgotPasswordForm} />
+
             <Route path="/inicio" exact component={Home} isPrivate />
         </Switch>
     );
