@@ -11,7 +11,8 @@ import { Link, useHistory } from 'react-router-dom';
 import { AuthContext } from '../../Hooks/auth';
 import ICredentials from '../../interfaces/credentials';
 
-import './styles.css';
+import { Container } from './styles';
+// import './styles.css';
 
 const LoginForm: React.FC = () => {
     const history = useHistory();
@@ -75,7 +76,7 @@ const LoginForm: React.FC = () => {
     );
 
     return (
-        <>
+        <Container>
             <h1>Login</h1>
             <span className="login-subtitle">Informe suas credenciais</span>
             <div className="form-login">
@@ -107,13 +108,13 @@ const LoginForm: React.FC = () => {
                     <div className="actions">
                         <Link to="/esqueci-senha">Esqueci minha senha</Link>
                         <p>
-                            Não tem uma conta?{' '}
+                            Não tem uma conta?{''}
                             <Link to="/cadastro">Cadastre-se</Link>
                         </p>
                     </div>
                 </form>
             </div>
-        </>
+        </Container>
     );
 };
 

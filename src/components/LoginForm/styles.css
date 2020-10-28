@@ -5,6 +5,11 @@
 .login-subtitle {
     font-size: 18px;
 }
+.form-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .form-login > form {
     margin-top: 10px;
